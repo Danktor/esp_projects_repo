@@ -1,0 +1,29 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d74df: task_wdt_timeout_handling at /home/diego/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x400d78a4: task_wdt_isr at /home/diego/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40082cc1: _xt_lowint1 at /home/diego/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008607f: vPortClearInterruptMaskFromISR at /home/diego/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at /home/diego/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400d5ee1: ultrasonic_measure_raw at /home/diego/esp-idf/my_libraries/esp-idf-lib/components/ultrasonic/ultrasonic.c:105
+0x400d5f7f: ultrasonic_measure_cm at /home/diego/esp-idf/my_libraries/esp-idf-lib/components/ultrasonic/ultrasonic.c:140
+0x400d5df9: app_main at /home/diego/esp-idf/projects/hc-sr04_program/main/main.c:25
+0x400e36c4: main_task at /home/diego/esp-idf/components/freertos/app_startup.c:208
+0x40085cdd: vPortTaskWrapper at /home/diego/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d74df: task_wdt_timeout_handling at /home/diego/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x400d78a4: task_wdt_isr at /home/diego/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40082cc1: _xt_lowint1 at /home/diego/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008607f: vPortClearInterruptMaskFromISR at /home/diego/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:560
+ (inlined by) vPortExitCritical at /home/diego/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x400d5ee1: ultrasonic_measure_raw at /home/diego/esp-idf/my_libraries/esp-idf-lib/components/ultrasonic/ultrasonic.c:105
+0x400d5f7f: ultrasonic_measure_cm at /home/diego/esp-idf/my_libraries/esp-idf-lib/components/ultrasonic/ultrasonic.c:140
+0x400d5df9: app_main at /home/diego/esp-idf/projects/hc-sr04_program/main/main.c:25
+0x400e36c4: main_task at /home/diego/esp-idf/components/freertos/app_startup.c:208
+0x40085cdd: vPortTaskWrapper at /home/diego/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m
